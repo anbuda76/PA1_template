@@ -77,12 +77,16 @@ DataSet_new$steps <- ifelse(is.na(DataSet_new$steps.x), DataSet_new$steps.y, Dat
 agg_steps2 <- aggregate(steps ~ date, DataSet_new , FUN=sum)
 hist(agg_steps2$steps, xlab="Total number of steps", col = "lightblue",
      main="Histogram of the total number of steps taken each day\n(After imputing NA values with \n mean of 5-min interval)")
+```
 
 ![plot of plot3](plot3.png)
 
+``` {r}
 mean(agg_steps2$steps)
 median(agg_steps2$steps)
 ```
+
+
 # 8. Panel plot comparing the average number of steps taken per 5-minute interval across weekdays and weekends
 ``` {r}
 # Convert date into weekdays
@@ -103,6 +107,6 @@ plot(subset(mean_interval_new, mean_interval_new$dayofweek == "weekend")$steps, 
      main="weekend", xlab="interval", ylab="number of steps" )
 grid(col = "lightgray", lty = "dotted")
 
+```
 ![plot of plot4](plot4.png)
 ![plot of plot5](plot5.png)
-```
