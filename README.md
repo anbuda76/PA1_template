@@ -34,7 +34,7 @@ agg_steps<- aggregate(steps ~ date, DataSet , FUN=sum, na.rm=TRUE)
 hist(agg_steps$steps, xlab="Total number of steps", col = "lightblue",
      main="Histogram of the total number of steps taken each day")
 ```
-![plot1](plot1.png)
+![plot of plot1](plot1.png)
 
 ## 2. Calculate and report the mean and median total number of steps taken per day
 
