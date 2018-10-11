@@ -51,7 +51,7 @@ median(agg_steps$steps)
 agg_interval <- aggregate(steps ~ interval, DataSet , FUN=sum, na.rm=TRUE)
 plot(agg_interval, type = "l", main = "Total Steps in time series")
 ```
-![plot1](plot.png) 
+![plot of plot2](plot2.png)
 
 ## 5. The 5-minute interval that, on average, contains the maximum number of steps
 ``` {r}
@@ -78,6 +78,8 @@ agg_steps2 <- aggregate(steps ~ date, DataSet_new , FUN=sum)
 hist(agg_steps2$steps, xlab="Total number of steps", col = "lightblue",
      main="Histogram of the total number of steps taken each day\n(After imputing NA values with \n mean of 5-min interval)")
 
+![plot of plot3](plot3.png)
+
 mean(agg_steps2$steps)
 median(agg_steps2$steps)
 ```
@@ -100,4 +102,6 @@ grid(col = "lightgray", lty = "dotted")
 plot(subset(mean_interval_new, mean_interval_new$dayofweek == "weekend")$steps, type ="l", 
      main="weekend", xlab="interval", ylab="number of steps" )
 grid(col = "lightgray", lty = "dotted")
+
+![plot of plot4](plot4.png)
 ```
