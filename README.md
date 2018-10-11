@@ -104,4 +104,5 @@ plot(subset(mean_interval_new, mean_interval_new$dayofweek == "weekend")$steps, 
 grid(col = "lightgray", lty = "dotted")
 
 ![plot of plot4](plot4.png)
+![plot of plot5](plot5.png)
 ```
