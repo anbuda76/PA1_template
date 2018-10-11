@@ -105,3 +105,4 @@ plot(subset(mean_interval_new, mean_interval_new$dayofweek == "weekend")$steps, 
      main="weekend", xlab="interval", ylab="number of steps" )
 grid(col = "lightgray", lty = "dotted")
 ```
+![plot of plot6](plot6.png)
