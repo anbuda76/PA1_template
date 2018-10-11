@@ -1,10 +1,7 @@
 ---
 title: 'Peer Graded Assignment: Course Project 1 (Reproducible Research)'
-author: "Andrea Buda"
-date: "11 ottobre 2018"
-output:
-  html_document: default
-  pdf_document: default
+author: 'Andrea Buda'
+date: '11 ottobre 2018'
 ---
 
 # Loading Data
