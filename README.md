@@ -51,6 +51,7 @@ median(agg_steps$steps)
 agg_interval <- aggregate(steps ~ interval, DataSet , FUN=sum, na.rm=TRUE)
 plot(agg_interval, type = "l", main = "Total Steps in time series")
 ```
+![plot1](plot.png) 
 
 ## 5. The 5-minute interval that, on average, contains the maximum number of steps
 ``` {r}
