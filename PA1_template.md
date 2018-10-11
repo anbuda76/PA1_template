@@ -1,8 +1,6 @@
----
-title: 'Peer Graded Assignment: Course Project 1 (Reproducible Research)'
-author: 'Andrea Buda'
-date: '11 ottobre 2018'
----
+# Peer Graded Assignment: Course Project 1 
+## (Reproducible Research)
+
 
 # Loading Data
 ### First all we need to load csv file in data variable
